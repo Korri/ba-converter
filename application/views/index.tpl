@@ -18,6 +18,7 @@
             }
         </style>
         <link rel="stylesheet" href="{url type=assets url=css}bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="{url type=assets url=css}fineuploader-3.4.1.css">
         <link rel="stylesheet" href="{url type=assets url=css}main.css">
 
         <script src="{url type=assets url=js}modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -31,15 +32,15 @@
 
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
-                <h1>Convert deck to BotArena format</h1>
+                <h1>Convert deck to BA format</h1>
                 <p>You just need top select you deck(s) and you'll get a link with the good format, you can also directly drop decks on this page.</p>
-                <div id="upload"></div>
+                <div id="upload" class="row-fluid clearfix"></div>
             </div>
 
             <hr>
 
             <footer>
-                <p>&copy; BotArena Deck Converter 2013</p>
+                <p>&copy; BA Deck Converter 2013</p>
             </footer>
 
         </div> <!-- /container -->
@@ -48,7 +49,9 @@
         <script>window.jQuery || document.write('<script src="{url type=assets url=js}jquery-1.9.1.min.js"><\/script>')</script>
 
         <script src="{url type=assets url=js}bootstrap.min.js"></script>
-
+        <script src="{url type=assets url=js}jquery.fineuploader-3.4.1.js"></script>
+        <script>
+            var PHP_UPLOADER = '{url url="site/upload"}';
+        </script>
         <script src="{url type=assets url=js}main.js"></script>
-    </body>
 </html>
