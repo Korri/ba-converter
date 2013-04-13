@@ -47,7 +47,7 @@
         <hr>
 
         <footer>
-            <p class="span12">&copy; BA Deck Converter 2013</p>
+            <p class="span12">This project is <a href="https://github.com/Korri/BotArena-Import">open-source</a>, created by Korri</p>
         </footer>
 
     </div> <!-- /container -->
