@@ -1,4 +1,4 @@
-BA Deck Importer
+BA Deck Converter
 ===============
 Website to convert decks into BA format.
 
