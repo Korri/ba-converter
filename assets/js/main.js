@@ -3,11 +3,13 @@ $('#upload').fineUploader({
         endpoint: PHP_UPLOADER
     },
     validation: {
-        sizeLimit: 10 * 1024
+        sizeLimit: 10 * 1024,
+        itemLimit: 100
     },
     //Boostrap style
     text: {
-        uploadButton: '<div><i class="icon-upload icon-white"></i> Click here to send a deckfile</div>'
+        uploadButton: '<div><i class="icon-upload icon-white"></i> Choose a file to convert</div>',
+        dragZone: 'Drop files here to convert'
     },
     template: '<div class="qq-uploader span12">' +
             '<pre class="qq-upload-drop-area span12"><span>{dragZoneText}</span></pre>' +
@@ -20,10 +22,18 @@ $('#upload').fineUploader({
         fail: 'alert alert-error'
     }
 });
-$('#upload').on('complete', function(ev, id, name, json){
+$('#upload').on('complete', function(ev, id, name, json) {
     var link = $('<a/>')
             .text('Download ' + json.name.newname)
-            .attr('href', PHP_DOWNLOAD + json.name.realname+'/'+json.name.newname);
+            .attr('target', '_blank')
+            .attr('href', PHP_DOWNLOAD + json.name.realname + '/' + json.name.newname);
     $('#upload .qq-upload-list li').eq(id).find('.qq-upload-status-text').append(link);
-    console.log(arguments);
+
+    $('<input type="hidden"/>')
+            .attr('name', 'cards[]')
+            .attr('value', json.name.realname + ':' + json.name.newname)
+            .appendTo('#download_all');
+    if (id >= 1) {
+        $('#download_all').removeClass('hidden');
+    }
 });

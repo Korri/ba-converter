@@ -35,24 +35,31 @@
                 <h1>Convert deck to BA format</h1>
                 <p>You just need top select you deck(s) and you'll get a link with the good format, you can also directly drop decks on this page.</p>
                 <div id="upload" class="row-fluid clearfix"></div>
+                <form target="_blank" class="row-fluid hidden" action="{url url="site/download_all"}" method="post" id="download_all">
+                    <input type="submit" class="btn btn-info" href="/" value="Download all as zip">
+                </form>
             </div>
+            <p class="span12 text-small">
+                All files will be deleted from the server after one hour.
+            </p>
+        </div>
 
-            <hr>
+        <hr>
 
-            <footer>
-                <p>&copy; BA Deck Converter 2013</p>
-            </footer>
+        <footer>
+            <p class="span12">&copy; BA Deck Converter 2013</p>
+        </footer>
 
-        </div> <!-- /container -->
+    </div> <!-- /container -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{url type=assets url=js}jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{url type=assets url=js}jquery-1.9.1.min.js"><\/script>')</script>
 
-        <script src="{url type=assets url=js}bootstrap.min.js"></script>
-        <script src="{url type=assets url=js}jquery.fineuploader-3.4.1.js"></script>
-        <script>
-            var PHP_UPLOADER = '{url url="site/upload"}/';
-            var PHP_DOWNLOAD = '{url url="site/download"}/';
-        </script>
-        <script src="{url type=assets url=js}main.js"></script>
+    <script src="{url type=assets url=js}bootstrap.min.js"></script>
+    <script src="{url type=assets url=js}jquery.fineuploader-3.4.1.js"></script>
+    <script>
+        var PHP_UPLOADER = '{url url="site/upload"}/';
+        var PHP_DOWNLOAD = '{url url="site/download"}/';
+    </script>
+    <script src="{url type=assets url=js}main.js"></script>
 </html>
