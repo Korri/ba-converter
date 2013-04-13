@@ -29,6 +29,9 @@ class Site extends CI_Controller {
                 }
                 closedir($handle);
             }
+            die('ok');
+        }else {
+            show_404();
         }
     }
     
