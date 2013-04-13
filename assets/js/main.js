@@ -20,3 +20,10 @@ $('#upload').fineUploader({
         fail: 'alert alert-error'
     }
 });
+$('#upload').on('complete', function(ev, id, name, json){
+    var link = $('<a/>')
+            .text('Download ' + json.name.newname)
+            .attr('href', PHP_DOWNLOAD + json.name.realname+'/'+json.name.newname);
+    $('#upload .qq-upload-list li').eq(id).find('.qq-upload-status-text').append(link);
+    console.log(arguments);
+});

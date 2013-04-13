@@ -44,7 +44,7 @@ class DeckConvertor {
                     $in_sideboard = true;
                 }
             }
-            $return .= $line."\n";
+            $return .= $line."\r\n";
         }
         
         return $return;

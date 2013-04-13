@@ -51,7 +51,8 @@
         <script src="{url type=assets url=js}bootstrap.min.js"></script>
         <script src="{url type=assets url=js}jquery.fineuploader-3.4.1.js"></script>
         <script>
-            var PHP_UPLOADER = '{url url="site/upload"}';
+            var PHP_UPLOADER = '{url url="site/upload"}/';
+            var PHP_DOWNLOAD = '{url url="site/download"}/';
         </script>
         <script src="{url type=assets url=js}main.js"></script>
 </html>
