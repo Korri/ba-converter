@@ -1,7 +1,7 @@
-BotArena Deck Importer
+BA Deck Importer
 ===============
-This project's purpose is to allow importation of Decks into BotArena from other formats.
+Website to convert decks into BA format.
 
-Formats supported :
-Magic Workstation (Editions are lost) : .mwDeck
-MTGO/Apprentice : .txt
+Supported formats :
+* Magic Workstation (Editions are lost) : .mwDeck
+* MTGO/Apprentice : .txt
