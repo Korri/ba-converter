@@ -47,7 +47,7 @@
         <hr>
 
         <footer>
-            <p class="span12">This project is <a href="https://github.com/Korri/ba-import">open-source</a>, created by Korri</p>
+            <p class="span12">This project is <a href="https://github.com/Korri/ba-converter">open-source</a>, created by Korri</p>
         </footer>
 
     </div> <!-- /container -->
